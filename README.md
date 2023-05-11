@@ -1,7 +1,7 @@
 # duckduckgo-api
 
 ## Use vercel
-[https://duckduckgo-api.vercel.app/search?q=啊对对对是什么梗&max_results=3](https://duckduckgo-api.vercel.app/search?q=啊对对对是什么梗&max_results=3)
+[https://duckduckgo-api.vercel.app/search?keywords=啊对对对是什么梗&max_results=3](https://duckduckgo-api.vercel.app/search?q=啊对对对是什么梗&max_results=3)
 
 使用vercel部署的本项目,免费，但是vercel免费用量用完就无了
 
@@ -37,7 +37,7 @@
 docker run -p 8000:8000 binjie09/duckduckgo-api
 ```
 
-then get `http://localhost:8000/search?q=啊对对对是什么梗&max_results=3`
+then get `http://localhost:8000/search?keywords=啊对对对是什么梗&max_results=3`
 ```json
 [
     {
