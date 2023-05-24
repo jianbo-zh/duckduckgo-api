@@ -1,5 +1,5 @@
 from flask import Flask, request
-from duckduckgo_search import ddg
+from duckduckgo_search import text
 app = Flask(__name__)
 
 
@@ -8,9 +8,7 @@ def search():  # put application's code here
     keywords = request.args.get('keywords')
     region = request.args.get('region') or "wt-wt"
     time = request.args.get('time') or None
-    print(request.args.get('max_results'))
-    max_results = int(request.args.get('max_results') or "3")
-    results = ddg(keywords, region=region, time=time, max_results=max_results)
+    results = text(keywords, region=region, timelimit=time)
     print(results)
     return results
 
